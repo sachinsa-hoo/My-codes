@@ -1,0 +1,31 @@
+#Complete the function to calculate and 
+#return the average score for a dance competition show.
+import java.util.Scanner;
+public class Program
+{
+    static int score(int[] arr){
+        int sum= 0;
+        int avg;
+        for(int i = 0; i < 5; i++){
+            sum += arr[i];
+
+        }
+        avg = sum/i.length;
+        return avg;
+
+    }
+    public static void main(String[] args) {
+
+        Scanner myObj = new Scanner(System.in);
+		
+        for(int i = 0; i < 5; i++){
+
+            arr[i] = myObj.nextInt();
+
+        }
+        score(arr);
+
+        System.out.println("Average score for the dance competition is :"+ avg );
+        
+	}
+}
