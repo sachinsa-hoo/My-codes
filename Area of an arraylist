@@ -1,0 +1,39 @@
+#/*Write a part that receives a list of square sides 
+# and prints for the user the areas of those squares.*/
+
+import java.util.Scanner;
+public class Program
+{
+    public static void main(String[] args) 
+    {
+        
+        double[] area = new double[4];
+        Scanner sc= new Scanner(System.in);
+        int i, a;
+        a = sc.nextInt(); // enter ur size of the array
+        int[] arr = new int[a];
+        System.out.println("Enter your array :");
+        for(i=0;i<arr.length;i++){
+
+           
+            arr[i] = sc.nextInt();// enter ur arr no. to create list 
+           
+
+        }
+
+        for (int t: arr) {
+            System.out.println(t); //print
+        }
+
+       
+
+        for(i=0;i<arr.length;i++){
+
+            System.out.println("Area of"+ arr[i] + ":");
+            area[i] = arr[i]*arr[i]; // print area of the array elements
+            System.out.println(area[i]);
+        }
+
+        return;
+	}
+}
